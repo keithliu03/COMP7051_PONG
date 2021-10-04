@@ -38,11 +38,11 @@ public class PlayerController2 : MonoBehaviour
 
         if (transform.position.x < -35)
         {
-            transform.position = new Vector3(-34.5f, 0, -40);
+            transform.position = new Vector3(-35f, 0, -40);
         }
         if (transform.position.x > 35)
         {
-            transform.position = new Vector3(34.5f, 0, -40);
+            transform.position = new Vector3(35f, 0, -40);
         }
     }
 }
