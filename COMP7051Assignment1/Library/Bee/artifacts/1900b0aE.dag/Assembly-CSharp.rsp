@@ -324,7 +324,6 @@
 "Assets/AILeftGoal.cs"
 "Assets/AIRightGoal.cs"
 "Assets/Ball.cs"
-"Assets/Border.cs"
 "Assets/ConsoleCommand.cs"
 "Assets/ConsoleController.cs"
 "Assets/InputActions.cs"
