@@ -12,10 +12,4 @@ public class Ball : MonoBehaviour
     {
         rb.AddForce(initialImpulse, ForceMode.Impulse);
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-
-    }
 }
