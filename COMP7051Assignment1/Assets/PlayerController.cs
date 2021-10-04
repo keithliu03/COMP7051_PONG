@@ -33,8 +33,16 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 v2 = movement.ReadValue<Vector2>();//extract 2d input data
         Vector3 v3 = new Vector3(v2.x, 0, v2.y);//convert to 3d space
-
-        //Debug.Log("Movement values " + v2);
         transform.Translate(v3);
+        //Debug.Log("Movement values " + v2);
+
+        if (transform.position.x < -35)
+        {
+            transform.position = new Vector3(-34.5f, 0, 40);
+        }
+        if (transform.position.x > 35)
+        {
+            transform.position = new Vector3(34.5f, 0, 40);
+        }
     }
 }

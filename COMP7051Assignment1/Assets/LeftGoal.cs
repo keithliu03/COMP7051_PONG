@@ -14,6 +14,17 @@ public class LeftGoal : MonoBehaviour
         if (ball != null)
         {
             ball.transform.position = new Vector3(0f, 1f, 0f);
+
+            ball.initialImpulse.x = Random.Range(-20, -10);
+            ball.initialImpulse.z = Random.Range(-20, -10);
+
+            Debug.Log("x = " + ball.initialImpulse.x);
+            Debug.Log("z = " + ball.initialImpulse.z);
+
+            ball.rb.velocity = ball.initialImpulse;
+
+            ball.rb.AddForce(ball.initialImpulse, ForceMode.Impulse);
+
             score.rightScore++;
             if (score.rightScore == 5)
             {
